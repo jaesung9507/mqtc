@@ -1,0 +1,57 @@
+html {
+    background-color: lightgray;
+}
+
+#connectStatus {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.subMsgItem {
+    background-color: #9c989e;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.subMsgItem::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.subMsgTopic {
+    float: left;
+    padding-bottom: 3px;
+    padding-left: 10px;
+}
+
+.subMsgTime {
+    text-align: right;
+    padding-bottom: 3px;
+    padding-right: 10px;
+}
+
+.subMsgPayload {
+    float: left;
+    padding-left: 10px;
+}
+
+.subMsgQos {
+    background-color: aqua;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.subMsgRetain {
+    background-color: brown;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+    border-radius: 10px;
+}

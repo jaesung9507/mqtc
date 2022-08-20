@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>MQTC</title>
+    <script src="./src/main.js" type="module"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label>Broker: </label>
+                <select>
+                    <option>Mosquitto</option>
+                </select>
+                <button onclick="OnConnectButton()">Connect</button>
+            </td>
+            <td>
+                <div id="connectStatus"></div>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <strong>Publish</strong><br>
+        <label>Topic:</label>
+        <input type="text" id="pubTopic">
+        <label>Msg:</label>
+        <input type="text" id="pubMsg">
+        <button onclick="OnPublishButton()">Pub</button>
+    </div>
+    <div>
+        <strong>Subscribe</strong><br>
+        <label>Topic:</label>
+        <input type="text" id="subTopic">
+        <button onclick="OnSubscriptionButton()">Sub</button>
+    </div>
+    <table width="100%">
+        <tr>
+            <td>
+                <div>
+                    <strong>Subscribe List</strong><br>
+                    <select id="subList" multiple></select>
+                </div>
+            </td>
+            <td>
+                <strong>Message</strong>
+                <div id="subMsg"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
