@@ -1,5 +1,6 @@
 html {
-    background-color: lightgray;
+    background: linear-gradient(45deg, #7683d9, #d8a0fe);
+    height: -webkit-fill-available;
 }
 
 #connectStatus {
